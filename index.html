@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Trabajo integrador || CV </title>
+</head>
+<body>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!--Menú-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#" id="nombreLogo"></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRÍCULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <!--Barra de navegación Responsive-->
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Inicio-->
+    <section id="inicio" class="inicio">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="600" class="banner">
+            <div class="imagen">
+                <img src="" alt="foto de perfil" id="foto"/>
+            </div>
+            <h1 id="nombre"></h1>
+            <br>
+            <div class="texto">
+                <h3>Front-End Developer.</h3>
+            </div>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Sobre mi-->
+    <section id="sobremi" class="sobremi">
+
+        <div data-aos="fade-up" class="contenido-seccion">
+            <h2>SOBRE MÍ</h2>
+            <p>¡Hola! Mi nombre es <span id="nombreAbout"></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div data-aos="fade-right" class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong >Cumpleaños</strong>
+                            <span id="cumpleaños"></span>
+                        </li>
+                        <li>
+                            <strong >Edad</strong>
+                            <span id="edad"></span>
+                        </li>
+                        <li>
+                            <strong >Teléfono</strong>
+                            <span id="telefono"></span>
+                        </li>
+                        <li>
+                            <strong >Email</strong>
+                            <span id="email"></span>
+                        </li>
+                        <li>
+                            <strong >Dirección</strong>
+                            <span id="ciudad"></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+
+                <div data-aos="fade-left" class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>WINDOWS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Skills-->
+    <section class="skills" id="skills">
+        <div data-aos="fade-up" class="contenido-seccion">
+            <h2>SKILLS</h2>
+            <div class="fila">
+
+                <!-- Habilidades Técnicas -->
+
+                <div data-aos="flip-left" class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>HTML5</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS3</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Tailwind CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>71%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React JS.</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Habilidades Profesionales -->
+
+                <div data-aos="flip-right" class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section id="curriculum" class="curriculum">
+        <div data-aos="fade-up" class="contenido-seccion">
+            <h2>CURRICULUM</h2>
+            <div class="fila">
+                <div data-aos="zoom-in-up" class="col izquierda">
+                    <h3>Educación</h3>
+                    <div data-aos="flip-left"class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Lorem, ipsum dolor.</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div data-aos="flip-left" class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Lorem, ipsum dolor.</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div data-aos="flip-left" class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Lorem, ipsum dolor.</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in-down" class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div data-aos="flip-left" class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div data-aos="flip-left" class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div data-aos="flip-left" class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div data-aos="fade-up" class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="600" class="proyecto">
+                    <img src="img/p1.png" alt="proyectos">
+                    <div class="overlay">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="600" class="proyecto">
+                    <img src="img/p2.png" alt="proyectos">
+                    <div class="overlay">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="600" class="proyecto">
+                    <img src="img/p3.png" alt="proyectos">
+                    <div class="overlay">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="600" class="proyecto">
+                    <img src="img/p1.png" alt="proyectos">
+                    <div class="overlay">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="600" class="proyecto">
+                    <img src="img/p2.png" alt="proyectos">
+                    <div class="overlay">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="600" class="proyecto">
+                    <img src="img/p3.png" alt="proyectos">
+                    <div class="overlay">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="contacto">
+            <div data-aos="fade-up" class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div data-aos="fade-right" class="col">
+                        <input type="text" placeholder="Nombre y Apellido *" required>
+                        <input type="text" placeholder="Teléfono *" required>
+                        <input type="text" placeholder="E-mail *" required>
+                        <input type="text" placeholder="Asunto *" required>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje *" required></textarea>
+                        <button>
+                            Enviar Mensaje
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                    <!-- Mapa -->
+                    <div data-aos="fade-left" class="col">
+                        <img src="img/ubicacion.png" alt="ubicación">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span id="ciudadContact"></span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    <span id="telefonoContact"></span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span id="emailContact"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500" href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500" href="#"><i class="fa-brands fa-github"></i></a>
+                <a data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500" href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="script.js"></script>
+</body>
+</html>
